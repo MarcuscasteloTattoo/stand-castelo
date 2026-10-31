@@ -24,6 +24,15 @@ button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 #stage canvas{display:block}
 .specs{display:flex;flex-wrap:wrap;gap:6px 22px;color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums;margin:0;padding:0;list-style:none}
 .specs b{color:var(--fg);font-weight:500}
+@media (max-width:700px){
+.wrap{gap:10px;padding-block:12px 18px}
+h1{font-size:18px}
+.tools{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px))) calc(-1*max(16px,env(safe-area-inset-right,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px))}
+.tools::-webkit-scrollbar{display:none}
+button{flex:0 0 auto;padding:9px 13px}
+#stage{aspect-ratio:auto;height:78vh;height:78svh;min-height:440px;max-height:none;border-radius:0;width:auto;margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px))) calc(-1*max(16px,env(safe-area-inset-right,0px)))}
+.specs{font-size:13px;gap:4px 16px}
+}
 *{box-sizing:border-box}body{margin:0}
 </style>
 </head>
@@ -47,7 +56,7 @@ button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 <li><b>2,70 m</b> de altura, testeira de 0,50 m</li>
 <li><b>10 placas</b> de 1 × 2,20 m, banners dos tatuadores nas placas 1, 3, 4 e 6; arte da marca nas placas 2 e 5; arte Marketing para Tatuadores nas laterais (7 a 10); arte da marca no fundo interno do estande 3</li>
 <li>Testeiras pretas: 2 logos na frente, 1 na lateral, 1 no fundo, com bandeiras BR, EUA e UE</li>
-<li>Arraste para girar, role para aproximar</li>
+<li>Arraste para girar, role ou faça pinça para aproximar, dois dedos para mover</li>
 </ul>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -64,8 +73,12 @@ renderer.outputEncoding=THREE.sRGBEncoding;renderer.toneMapping=THREE.ACESFilmic
 stage.appendChild(renderer.domElement);
 const scene=new THREE.Scene();scene.background=new THREE.Color(0xe4e6e9);
 const camera=new THREE.PerspectiveCamera(30,W()/H(),0.1,200);
+const BASE_A=16/9,TAN15=Math.tan(15*Math.PI/180);
+function fovFor(a){if(a>=BASE_A)return 30;return Math.min(48,2*Math.atan(TAN15*BASE_A/a)*180/Math.PI);}
+function distFor(a){if(a>=BASE_A)return 1;return Math.max(1,(TAN15*BASE_A/a)/Math.tan(camera.fov*Math.PI/360));}
+camera.fov=fovFor(W()/H());camera.updateProjectionMatrix();
 const controls=new THREE.OrbitControls(camera,renderer.domElement);
-controls.enableDamping=true;controls.maxPolarAngle=Math.PI/2-0.02;
+controls.enableDamping=true;controls.maxDistance=45;controls.minDistance=1.2;controls.maxPolarAngle=Math.PI/2-0.02;
 scene.add(new THREE.HemisphereLight(0xffffff,0xb9bcc0,0.65));
 const sun=new THREE.DirectionalLight(0xffffff,0.85);sun.position.set(9,13,8);sun.castShadow=true;
 sun.shadow.mapSize.set(2048,2048);sun.shadow.bias=-0.0005;
@@ -158,12 +171,13 @@ const imgReady=new Promise(r=>{img.onload=r;img.onerror=r;img.src=PHOENIX;});
 Promise.all([fontReady,imgReady]).then(()=>buildFascias(img));
 
 const views={iso:{p:[11,7.2,7.5],t:[3,1.1,-2]},front:{p:[3,1.8,11.5],t:[3,1.4,-2]},right:{p:[15,1.8,-2],t:[3,1.4,-2]},back:{p:[4.5,1.8,-15],t:[4.5,1.4,-2]},top:{p:[3,17,-2.001],t:[3,0,-2]},p3:{p:[3,1.45,6.2],t:[3,1.15,-2]},side3:{p:[7.6,1.7,-6.2],t:[4.2,1.15,-2.6]}};
-function setView(k){const v=views[k];camera.position.set(...v.p);controls.target.set(...v.t);controls.update();
+function setView(k){const v=views[k];const d=distFor(camera.aspect);camera.position.set(v.t[0]+(v.p[0]-v.t[0])*d,v.t[1]+(v.p[1]-v.t[1])*d,v.t[2]+(v.p[2]-v.t[2])*d);controls.target.set(...v.t);controls.update();
  Object.keys(views).forEach(n=>document.getElementById('v-'+n).setAttribute('aria-pressed',n===k?'true':'false'));}
 setView('iso');
 Object.keys(views).forEach(k=>document.getElementById('v-'+k).addEventListener('click',()=>setView(k)));
 (function loop(){controls.update();renderer.render(scene,camera);requestAnimationFrame(loop);})();
-new ResizeObserver(()=>{camera.aspect=W()/H();camera.updateProjectionMatrix();renderer.setSize(W(),H());}).observe(stage);
+let lastA=W()/H();
+new ResizeObserver(()=>{const a=W()/H();camera.aspect=a;camera.fov=fovFor(a);camera.updateProjectionMatrix();renderer.setSize(W(),H());if(Math.abs(a-lastA)/lastA>0.25){lastA=a;const cur=Object.keys(views).find(n=>document.getElementById('v-'+n).getAttribute('aria-pressed')==='true')||'iso';setView(cur);}}).observe(stage);
 </script>
 </body>
 </html>
