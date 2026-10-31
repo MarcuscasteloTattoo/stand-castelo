@@ -49,7 +49,7 @@ As quatro placas laterais (7 e 8 no estande 1, 9 e 10 no estande 3) recebem a ar
 
 - `index.html` — modelo 3D (Three.js), arquivo único
 - `assets/logo-tatuador-de-elite.png` — logo enviada (300 × 50 px)
-- `assets/banners/` — banners originais dos tatuadores (placas 1, 3, 4 e 6)
+- `assets/banners/` — banners originais dos tatuadores (placas 1, 3, 4 e 6) e a arte da marca (placas 2, 5, 7, 8, 9 e 10)
 - `docs/especificacao-estandes.md` — especificação completa do projeto
 
 ## Observação
