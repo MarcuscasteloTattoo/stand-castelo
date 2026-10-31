@@ -28,10 +28,24 @@ Pretas, com a logo do Tatuador de Elite (fênix, nome, "Marketing para tatuadore
 | Lateral direita | 4 m | 1 |
 | Fundo do estande 3 | 3 m | 1 |
 
+## Banners na parede principal (6 m)
+
+Placas numeradas da esquerda para a direita, viradas para a frente do estande:
+
+| Placa | Banner |
+| --- | --- |
+| 1 | Damisel Ramirez |
+| 2 | branca |
+| 3 | Rafael Luzart |
+| 4 | branca |
+| 5 | branca |
+| 6 | Samara Christo |
+
 ## Arquivos
 
 - `index.html` — modelo 3D (Three.js), arquivo único
 - `assets/logo-tatuador-de-elite.png` — logo enviada (300 × 50 px)
+- `assets/banners/` — banners originais dos tatuadores (placas 1, 3 e 6)
 - `docs/especificacao-estandes.md` — especificação completa do projeto
 
 ## Observação
