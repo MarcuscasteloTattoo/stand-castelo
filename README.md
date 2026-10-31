@@ -35,11 +35,15 @@ Placas numeradas da esquerda para a direita, viradas para a frente do estande:
 | Placa | Banner |
 | --- | --- |
 | 1 | Damisel Ramirez |
-| 2 | branca |
+| 2 | Arte Tatuador de Elite + Castelo Ads |
 | 3 | Rafael Luzart |
 | 4 | Fabrícia Gonçalves |
-| 5 | branca |
+| 5 | Arte Tatuador de Elite + Castelo Ads |
 | 6 | Samara Christo |
+
+## Laterais de 2 m
+
+As quatro placas laterais (7 e 8 no estande 1, 9 e 10 no estande 3) recebem a arte Tatuador de Elite + Castelo Ads na face voltada para dentro do estande.
 
 ## Arquivos
 
