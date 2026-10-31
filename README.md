@@ -37,7 +37,7 @@ Placas numeradas da esquerda para a direita, viradas para a frente do estande:
 | 1 | Damisel Ramirez |
 | 2 | branca |
 | 3 | Rafael Luzart |
-| 4 | branca |
+| 4 | Fabrícia Gonçalves |
 | 5 | branca |
 | 6 | Samara Christo |
 
@@ -45,7 +45,7 @@ Placas numeradas da esquerda para a direita, viradas para a frente do estande:
 
 - `index.html` — modelo 3D (Three.js), arquivo único
 - `assets/logo-tatuador-de-elite.png` — logo enviada (300 × 50 px)
-- `assets/banners/` — banners originais dos tatuadores (placas 1, 3 e 6)
+- `assets/banners/` — banners originais dos tatuadores (placas 1, 3, 4 e 6)
 - `docs/especificacao-estandes.md` — especificação completa do projeto
 
 ## Observação
