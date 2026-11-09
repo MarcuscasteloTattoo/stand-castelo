@@ -43,7 +43,14 @@ Placas numeradas da esquerda para a direita, viradas para a frente do estande:
 
 ## Laterais de 2 m
 
-As quatro placas laterais (7 e 8 no estande 1, 9 e 10 no estande 3) recebem a arte "Marketing para Tatuadores" na face voltada para dentro do estande.
+Face voltada para dentro do estande:
+
+| Placa | Lateral | Banner |
+| --- | --- | --- |
+| 7 | Estande 1 (perto da frente) | Patrocinador oficial Arromba Tattoo Shop (cupom CASTELO) |
+| 8 | Estande 1 (perto do fundo) | Patrocinador oficial The One (cupom CASTELO) |
+| 9 | Estande 3 | Arte "Marketing para Tatuadores" |
+| 10 | Estande 3 | Arte "Marketing para Tatuadores" |
 
 ## Fundo interno do estande 3 (3 m)
 
@@ -61,7 +68,7 @@ Quatro balcões modulares de 0,98 m (largura) × 0,48 m (profundidade) × 0,91 m
 
 - `index.html` — modelo 3D (Three.js), arquivo único
 - `assets/logo-tatuador-de-elite.png` — logo enviada (300 × 50 px)
-- `assets/banners/` — banners originais dos tatuadores (placas 1, 3, 4 e 6), a arte da marca (placas 2 e 5 e verso das placas 4 a 6) e a arte "Marketing para Tatuadores" (laterais, placas 7 a 10)
+- `assets/banners/` — banners originais dos tatuadores (placas 1, 3, 4 e 6), a arte da marca (placas 2 e 5 e verso das placas 4 a 6) , a arte "Marketing para Tatuadores" (placas 9 e 10) e os patrocinadores (placas 7 e 8 e balcão da frente)
 - `docs/especificacao-estandes.md` — especificação completa do projeto
 
 ## Observação
