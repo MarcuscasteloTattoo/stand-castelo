@@ -49,6 +49,10 @@ As quatro placas laterais (7 e 8 no estande 1, 9 e 10 no estande 3) recebem a ar
 
 O verso das placas 4, 5 e 6, voltado para dentro do estande 3, recebe a arte Tatuador de Elite + Castelo Ads, uma em cada placa.
 
+## Balcão
+
+Balcão modular de 0,98 m (largura) × 0,48 m (profundidade) × 0,91 m (altura), em alumínio com painéis brancos. Fica do lado de fora do estande, encostado na fachada, centralizado em frente ao pilar do meio da frente de 6 m.
+
 ## Arquivos
 
 - `index.html` — modelo 3D (Three.js), arquivo único
