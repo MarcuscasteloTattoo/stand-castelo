@@ -51,10 +51,11 @@ O verso das placas 4, 5 e 6, voltado para dentro do estande 3, recebe a arte Tat
 
 ## Balcões
 
-Três balcões modulares de 0,98 m (largura) × 0,48 m (profundidade) × 0,91 m (altura), em alumínio com painéis brancos, todos do lado de fora do estande:
+Quatro balcões modulares de 0,98 m (largura) × 0,48 m (profundidade) × 0,91 m (altura), em alumínio com painéis brancos, todos do lado de fora do estande:
 
 - 1 centralizado em frente ao pilar do meio da frente de 6 m
-- 2 no pilar do canto do fundo do estande 3 (lateral direita × fundo), um em cada face: um ao longo da lateral direita e outro ao longo do fundo
+- 2 lado a lado ao longo da lateral direita do estande 3, começando no pilar do canto do fundo
+- 1 ao longo do fundo do estande 3, ao lado do mesmo pilar do canto
 
 ## Arquivos
 

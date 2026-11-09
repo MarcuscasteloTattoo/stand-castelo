@@ -47,7 +47,7 @@ button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 <ul class="specs">
 <li><b>18 m²</b> em L, 3 módulos de 3 × 2 m</li>
 <li><b>2,70 m</b> de altura, testeira de 0,50 m</li>
-<li><b>3 balcões</b> de 0,98 × 0,48 × 0,91 m, do lado de fora: 1 no pilar central da frente e 2 no pilar do canto do fundo</li>
+<li><b>4 balcões</b> de 0,98 × 0,48 × 0,91 m, do lado de fora: 1 no pilar central da frente, 2 lado a lado na lateral direita e 1 no fundo</li>
 <li><b>10 placas</b> de 1 × 2,20 m, banners dos tatuadores nas placas 1, 3, 4 e 6; arte da marca nas placas 2 e 5; arte Marketing para Tatuadores nas laterais (7 a 10); arte da marca no fundo interno do estande 3</li>
 <li>Testeiras pretas: 2 logos na frente, 1 na lateral, 1 no fundo, com bandeiras BR, EUA e UE</li>
 <li>Arraste para girar, role para aproximar</li>
@@ -171,8 +171,9 @@ function counter(cx,cz,w,d,h){
 }
 counter(3,0.06+0.24+0.02,0.98,0.48,0.91);
 counter(6+0.08+0.24,-4+0.08+0.49,0.48,0.98,0.91);
+counter(6+0.08+0.24,-4+0.08+0.49+0.99,0.48,0.98,0.91);
 counter(6-0.08-0.49,-4-0.08-0.24,0.98,0.48,0.91);
-const views={iso:{p:[11,7.2,7.5],t:[3,1.1,-2]},front:{p:[3,1.8,11.5],t:[3,1.4,-2]},right:{p:[15,1.8,-2],t:[3,1.4,-2]},back:{p:[4.5,1.8,-15],t:[4.5,1.4,-2]},top:{p:[3,17,-2.001],t:[3,0,-2]},p3:{p:[3,1.45,6.2],t:[3,1.15,-2]},side3:{p:[7.6,1.7,-6.2],t:[4.2,1.15,-2.6]},counter:{p:[4.6,1.9,3.6],t:[3,0.6,0.2]},counters:{p:[9.6,2.2,-7.6],t:[5.6,0.7,-3.6]}};
+const views={iso:{p:[11,7.2,7.5],t:[3,1.1,-2]},front:{p:[3,1.8,11.5],t:[3,1.4,-2]},right:{p:[15,1.8,-2],t:[3,1.4,-2]},back:{p:[4.5,1.8,-15],t:[4.5,1.4,-2]},top:{p:[3,17,-2.001],t:[3,0,-2]},p3:{p:[3,1.45,6.2],t:[3,1.15,-2]},side3:{p:[7.6,1.7,-6.2],t:[4.2,1.15,-2.6]},counter:{p:[4.6,1.9,3.6],t:[3,0.6,0.2]},counters:{p:[10.2,2.3,-7.4],t:[5.8,0.7,-3.2]}};
 function setView(k){const v=views[k];camera.position.set(...v.p);controls.target.set(...v.t);controls.update();
  Object.keys(views).forEach(n=>document.getElementById('v-'+n).setAttribute('aria-pressed',n===k?'true':'false'));}
 setView('iso');
