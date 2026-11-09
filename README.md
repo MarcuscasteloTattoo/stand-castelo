@@ -68,7 +68,7 @@ Quatro balcões modulares de 0,98 m (largura) × 0,48 m (profundidade) × 0,91 m
 
 - `index.html` — modelo 3D (Three.js), arquivo único
 - `assets/logo-tatuador-de-elite.png` — logo enviada (300 × 50 px)
-- `assets/banners/` — banners originais dos tatuadores (placas 1, 3, 4 e 6), a arte da marca (placas 2 e 5 e verso das placas 4 a 6) , a arte "Marketing para Tatuadores" (placas 9 e 10) e os patrocinadores (placas 7 e 8 e balcão da frente)
+- `assets/banners/` — banners originais dos tatuadores (placas 1, 3, 4 e 6), a arte da marca (placas 2 e 5 e verso das placas 4 a 6), a arte "Marketing para Tatuadores" (placas 9 e 10) e os patrocinadores (placas 7 e 8 e balcão da frente)
 - `docs/especificacao-estandes.md` — especificação completa do projeto
 
 ## Observação
