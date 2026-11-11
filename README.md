@@ -64,9 +64,8 @@ O verso das placas 4, 5 e 6, voltado para dentro do estande 3, recebe os três p
 
 ## Balcões
 
-Quatro balcões modulares de 0,98 m (largura) × 0,48 m (profundidade) × 0,91 m (altura), em alumínio com painéis brancos, todos do lado de fora do estande:
+Três balcões modulares de 0,98 m (largura) × 0,48 m (profundidade) × 0,91 m (altura), em alumínio com painéis brancos, todos do lado de fora do estande 3:
 
-- 1 centralizado em frente ao pilar do meio da frente de 6 m, com a logo Arromba Tattoo Shop na face voltada para o corredor
 - 2 lado a lado ao longo da lateral direita do estande 3, com a arte virada para o corredor:
   - 1º (junto ao pilar do canto do fundo): logo Arromba Tattoo Shop
   - 2º (ao lado do primeiro, em direção à frente): logo Tatuador de Elite
@@ -76,7 +75,7 @@ Quatro balcões modulares de 0,98 m (largura) × 0,48 m (profundidade) × 0,91 m
 
 - `index.html` — modelo 3D (Three.js), arquivo único
 - `assets/logo-tatuador-de-elite.png` — logo enviada (300 × 50 px)
-- `assets/banners/` — banners originais dos tatuadores (placas 1, 3, 4 e 6), a arte da marca (placas 7 e 8), os painéis de tatuadores (estande-3-tatuadores-1 a 3, verso das placas 6, 5 e 4), a arte "Marketing para Tatuadores" (placas 9 e 10) e os patrocinadores (placas 2 e 5 e balcão da frente)
+- `assets/banners/` — banners originais dos tatuadores (placas 1, 3, 4 e 6), a arte da marca (placas 7 e 8), os painéis de tatuadores (estande-3-tatuadores-1 a 3, verso das placas 6, 5 e 4), a arte "Marketing para Tatuadores" (placas 9 e 10), os patrocinadores (placas 2 e 5) e as artes dos balcões
 - `docs/especificacao-estandes.md` — especificação completa do projeto
 
 ## Observação
