@@ -54,7 +54,13 @@ Face voltada para dentro do estande:
 
 ## Fundo interno do estande 3 (3 m)
 
-O verso das placas 4, 5 e 6, voltado para dentro do estande 3, recebe a arte Tatuador de Elite + Castelo Ads, uma em cada placa.
+O verso das placas 4, 5 e 6, voltado para dentro do estande 3, recebe os três painéis com os tatuadores do Tatuador de Elite. Vistos de dentro do estande 3, da esquerda para a direita:
+
+| Verso da placa | Painel |
+| --- | --- |
+| 6 | Tatuadores 1 (Rafael, Fabrícia, Samara, Dami, Pedro, Elisa, Victoria, Ink Korps, Imad, Fernanda, Gameiro, Gabriel) |
+| 5 | Tatuadores 2 (Anderson, Eduardo, Elen, Letícia, Junio, Francisco, Leandro, Igor, Ana Beatris, Vinícius, Joana, Sérgio) |
+| 4 | Tatuadores 3 (Gabriel, Eduardo, Tiago, Emerson, Julia, Ramon, Luiz RM, Prime Art, Giulia, Rodrigo, Beatris, Junior) |
 
 ## Balcões
 
@@ -68,7 +74,7 @@ Quatro balcões modulares de 0,98 m (largura) × 0,48 m (profundidade) × 0,91 m
 
 - `index.html` — modelo 3D (Three.js), arquivo único
 - `assets/logo-tatuador-de-elite.png` — logo enviada (300 × 50 px)
-- `assets/banners/` — banners originais dos tatuadores (placas 1, 3, 4 e 6), a arte da marca (placas 7 e 8 e verso das placas 4 a 6), a arte "Marketing para Tatuadores" (placas 9 e 10) e os patrocinadores (placas 2 e 5 e balcão da frente)
+- `assets/banners/` — banners originais dos tatuadores (placas 1, 3, 4 e 6), a arte da marca (placas 7 e 8), os painéis de tatuadores (estande-3-tatuadores-1 a 3, verso das placas 6, 5 e 4), a arte "Marketing para Tatuadores" (placas 9 e 10) e os patrocinadores (placas 2 e 5 e balcão da frente)
 - `docs/especificacao-estandes.md` — especificação completa do projeto
 
 ## Observação
