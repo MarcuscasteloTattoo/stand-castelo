@@ -47,7 +47,7 @@ Face voltada para dentro do estande:
 
 | Placa | Lateral | Banner |
 | --- | --- | --- |
-| 7 | Estande 1 (perto da frente) | Arte Tatuador de Elite + Castelo Ads |
+| 7 | Estande 1 (perto da frente) | "Resultado em 45 dias ou o seu dinheiro de volta" com QR Code |
 | 8 | Estande 1 (perto do fundo) | Arte Tatuador de Elite + Castelo Ads |
 | 9 | Estande 3 (perto da parede de 6 m) | "Resultado em 45 dias ou o seu dinheiro de volta" com QR Code |
 | 10 | Estande 3 (perto do fundo) | Marketing para Tatuadores com Anna Grazzi |
@@ -75,7 +75,7 @@ Três balcões modulares de 0,98 m (largura) × 0,48 m (profundidade) × 0,91 m 
 
 - `index.html` — modelo 3D (Three.js), arquivo único
 - `assets/logo-tatuador-de-elite.png` — logo enviada (300 × 50 px)
-- `assets/banners/` — banners originais dos tatuadores (placas 1, 3, 4 e 6), a arte da marca (placas 7 e 8), os painéis de tatuadores (estande-3-tatuadores-1 a 3, verso das placas 6, 5 e 4), as artes das placas 9 e 10 (garantia de 45 dias e Anna Grazzi), os patrocinadores (placas 2 e 5) e as artes dos balcões
+- `assets/banners/` — banners originais dos tatuadores (placas 1, 3, 4 e 6), a arte da marca (placa 8), os painéis de tatuadores (estande-3-tatuadores-1 a 3, verso das placas 6, 5 e 4), as artes das placas 7, 9 e 10 (garantia de 45 dias e Anna Grazzi), os patrocinadores (placas 2 e 5) e as artes dos balcões
 - `docs/especificacao-estandes.md` — especificação completa do projeto
 
 ## Observação
