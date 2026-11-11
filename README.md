@@ -67,9 +67,9 @@ O verso das placas 4, 5 e 6, voltado para dentro do estande 3, recebe os três p
 Três balcões modulares de 0,98 m (largura) × 0,48 m (profundidade) × 0,91 m (altura), em alumínio com painéis brancos, todos do lado de fora do estande 3:
 
 - 2 lado a lado ao longo da lateral direita do estande 3, com a arte virada para o corredor:
-  - 1º (junto ao pilar do canto do fundo): logo Arromba Tattoo Shop
-  - 2º (ao lado do primeiro, em direção à frente): logo Tatuador de Elite
-- 1 ao longo do fundo do estande 3, ao lado do mesmo pilar do canto, com o QR Code virado para o corredor
+  - 1º (junto ao pilar do canto do fundo): QR Code Tatuador de Elite
+  - 2º (ao lado do primeiro, em direção à frente): "Resultado em 45 dias ou o seu dinheiro de volta"
+- 3º: ao longo do fundo do estande 3, ao lado do mesmo pilar do canto, com o QR Code Tatuador de Elite virado para o corredor
 
 ## Arquivos
 
