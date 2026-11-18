@@ -37,7 +37,7 @@ Placas numeradas da esquerda para a direita, viradas para a frente do estande:
 | 1 | Damisel Ramirez |
 | 2 | Arromba Tattoo Shop com QR Code |
 | 3 | Rafael Luzart |
-| 4 | Fabrícia Gonçalves |
+| 4 | Julia Brigida |
 | 5 | The One com QR Code |
 | 6 | Samara Christo |
 
